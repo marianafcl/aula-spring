@@ -53,6 +53,6 @@ public class BankController {
 		new Client(bank, "ID02", "Manel", 44);
 
 		model.addAttribute("bank", bank);
-		return "bankView";
+		return "redirect:/banks/bank/{code}/clients";
 	}
 }
