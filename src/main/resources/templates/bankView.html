@@ -58,7 +58,7 @@
 					<td th:text="${aclient.id}">ID</td>
 					<td th:text="${aclient.name}">Name</td>
 					<td th:text="${aclient.age}">Age</td>
-					<td><a th:href="@{/banks/bank/{code}(code=${bank.code})/clients/client/{id}(id=${aclient.id})}">Page</a></td>
+					<td><a th:href="@{/banks/bank/{code}/clients/client/{id}(code=${bank.code}, id=${aclient.id})}">Page</a></td>
 				</tr>
 			</tbody>
 		</table>
